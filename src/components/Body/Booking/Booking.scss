@@ -1,0 +1,18 @@
+.booking-info {
+  margin: 1rem;
+  width: 100%;
+}
+
+.img-wrapper {
+  display: inline-block;
+  overflow: hidden;
+}
+
+.venue-img {
+  transition: all 0.5s ease-in-out;
+}
+.venue-img:hover {
+  transform: scale(1.5);
+  -webkit-transform: scale(1.5);
+  -ms-transform: scale(1.5);
+}
