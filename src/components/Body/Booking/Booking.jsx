@@ -4,6 +4,16 @@ import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faCalendarAlt, faClock, faHotel, faUserFriends, faTag} from "@fortawesome/free-solid-svg-icons";
 import "./Booking.scss";
 
+const iconColor = "#1C63AD";
+const iconStyle = {marginRight: 0.5 + "em"};
+
+const bookingDetails = [
+  {title: "Date", icon: faCalendarAlt, info: "Friday, February 19, 2019"},
+  {title: "Duration", icon: faClock, info: "9:00 - 17:00"},
+  {title: "Room", icon: faHotel, info: "Lounge"},
+  {title: "Delegates", icon: faUserFriends, info: "10"},
+  {title: "Price per delegate", icon: faTag, info: "55 EUR"}
+];
 class Booking extends Component {
   render() {
     return (
@@ -15,41 +25,15 @@ class Booking extends Component {
           </div>
           <table className="booking-info">
             <tbody>
-              <tr>
-                <td>
-                  <FontAwesomeIcon icon={faCalendarAlt} style={{marginRight: 0.5 + "em"}} color="#1C63AD" />
-                  Date
-                </td>
-                <td>Friday, February 19, 2019</td>
-              </tr>
-              <tr>
-                <td>
-                  <FontAwesomeIcon icon={faClock} style={{marginRight: 0.5 + "em"}} color="#1C63AD" />
-                  Duration
-                </td>
-                <td>9:00 - 17:00</td>
-              </tr>
-              <tr>
-                <td>
-                  <FontAwesomeIcon icon={faHotel} style={{marginRight: 0.5 + "em"}} color="#1C63AD" />
-                  Room
-                </td>
-                <td>Lounge</td>
-              </tr>
-              <tr>
-                <td>
-                  <FontAwesomeIcon icon={faUserFriends} style={{marginRight: 0.5 + "em"}} color="#1C63AD" />
-                  Delegates
-                </td>
-                <td>10</td>
-              </tr>
-              <tr>
-                <td>
-                  <FontAwesomeIcon icon={faTag} style={{marginRight: 0.5 + "em"}} color="#1C63AD" />
-                  Price per delegate
-                </td>
-                <td>55 EUR</td>
-              </tr>
+              {bookingDetails.map((item, index) => (
+                <tr key={index}>
+                  <td>
+                    <FontAwesomeIcon icon={item.icon} style={iconStyle} color={iconColor} />
+                    {item.title}
+                  </td>
+                  <td>{item.info}</td>
+                </tr>
+              ))}
               <tr>
                 <td colSpan="2">
                   <hr />
