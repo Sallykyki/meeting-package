@@ -1,7 +1,27 @@
+@import "../../../styles/setting";
+
 .form-control {
   border: 0;
   outline: 0;
-  border-bottom: 2px solid #000000;
+  border-bottom: 1px solid #000000;
   border-radius: 0;
   width: 70%;
+  transition: 0.2s ease-in;
+}
+.form-control:focus {
+  box-shadow: none;
+  border-bottom: 3px solid $brand-color;
+}
+
+.form-group {
+  margin-bottom: 2rem;
+}
+
+.form-group label {
+  margin-bottom: 0;
+}
+
+.btn-primary {
+  background-color: $brand-color;
+  margin-top: 1rem;
 }
