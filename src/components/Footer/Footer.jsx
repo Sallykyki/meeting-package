@@ -30,7 +30,11 @@ class Footer extends Component {
       <footer>
         <div className="container">
           <div className="row ">
-            <div className="col-sm-8 ml-auto">
+            <div className="col-sm-4 order-sm-2">
+              <h4>meetingpackge</h4>
+              <p> &copy; 2018 Cocouz Oy Ltd</p>
+            </div>
+            <div className="col-sm-8 ml-auto order-sm-1">
               <strong>Follow us on social media</strong>
               <br />
               <div className="some-sections">
@@ -38,10 +42,6 @@ class Footer extends Component {
                 <FontAwesomeIcon icon={faTwitterSquare} size="2x" style={someIconStyle} />
                 <FontAwesomeIcon icon={faLinkedin} size="2x" style={someIconStyle} />
               </div>
-            </div>
-            <div className="col-sm-4">
-              <h4>meetingpackge</h4>
-              <p> &copy; 2018 Cocouz Oy Ltd</p>
             </div>
           </div>
           <hr className="footer-line" />
@@ -53,7 +53,7 @@ class Footer extends Component {
                 <ul>
                   {item.links.map((linkItem, linkIndex) => (
                     <li key={linkIndex}>
-                      <a href="#">{linkItem}</a>
+                      <a href="/#">{linkItem}</a>
                     </li>
                   ))}
                 </ul>
