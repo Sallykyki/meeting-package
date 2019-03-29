@@ -7,21 +7,21 @@ class Navbar extends Component {
     return (
       <nav className="navbar navbar-expand">
         <div className="container">
-          <a className="navbar-brand" href="#">
-            <img src={Logo} className="navbar-brand" alt="logo img" />
-          </a>
+          <img src={Logo} className="navbar-brand img-fluid" alt="logo img" />
           <div className="collapse navbar-collapse">
             <ul className="navbar-nav ml-auto">
               <li className="nav-item">
-                <span className="user-name">
+                <span className="nav-link user-name">
                   <strong>Welcome, John</strong>
                 </span>
               </li>
               <li className="nav-item">
-                <select className="language-select">
-                  <option>EN</option>
-                  <option>FI</option>
-                </select>
+                <div className="h-100 d-flex align-items-center">
+                  <select className="nav-link language-select">
+                    <option>EN</option>
+                    <option>FI</option>
+                  </select>
+                </div>
               </li>
             </ul>
           </div>

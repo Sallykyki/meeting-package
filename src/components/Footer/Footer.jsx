@@ -5,6 +5,7 @@ import {faFacebook, faTwitterSquare, faLinkedin} from "@fortawesome/free-brands-
 import SolutionsIcon from "../../assets/img/solution.png";
 import ProductsIcon from "../../assets/img/product.png";
 import MoreIcon from "../../assets/img/more.png";
+
 class Footer extends Component {
   render() {
     return (

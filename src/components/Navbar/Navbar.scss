@@ -14,5 +14,17 @@
 
 .language-select {
   border: 0.5px solid $brand-color;
-  background-color: transparent;
+  background: transparent;
+  background-image: url("../../assets/img/down-arrow.svg");
+  background-repeat: no-repeat;
+  background-position-x: 100%;
+  background-position-y: 5px;
+  appearance: none;
+  padding-right: 1.2rem !important;
+}
+
+@media (max-width: 767.98px) {
+  .navbar-brand {
+    width: 40%;
+  }
 }

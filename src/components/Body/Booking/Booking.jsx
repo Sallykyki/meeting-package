@@ -7,13 +7,12 @@ import "./Booking.scss";
 class Booking extends Component {
   render() {
     return (
-      <div className="card">
+      <div className="card h-100">
         <div className="card-body">
           <h4 className="card-title">Venue Luna House</h4>
           <div className="img-wrapper">
             <img className="card-img-top venue-img" src={VenueImg} alt="venue img" />
           </div>
-
           <table className="booking-info">
             <tbody>
               <tr>
@@ -25,7 +24,6 @@ class Booking extends Component {
               </tr>
               <tr>
                 <td>
-                  {" "}
                   <FontAwesomeIcon icon={faClock} style={{marginRight: 0.5 + "em"}} color="#1C63AD" />
                   Duration
                 </td>
