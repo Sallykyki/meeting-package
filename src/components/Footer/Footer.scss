@@ -25,3 +25,11 @@ footer img {
   width: 10%;
   margin-bottom: 1rem;
 }
+
+.related-links a {
+  color: #ffffff;
+
+  &:hover {
+    text-decoration: none;
+  }
+}
