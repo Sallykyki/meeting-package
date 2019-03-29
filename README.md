@@ -1,6 +1,7 @@
 # Demo checkout page for meetingpackage.com
 
 A booking checkout page demo for meetingpackage.com
+[Demo link](https://meeting-package-checkout-demo.netlify.com/)
 
 ## Features
 
