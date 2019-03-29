@@ -9,7 +9,7 @@ class Booking extends Component {
     return (
       <div className="card">
         <div className="card-body">
-          <h5 className="card-tile">Venue Luna House</h5>
+          <h4 className="card-title">Venue Luna House</h4>
           <div className="img-wrapper">
             <img className="card-img-top venue-img" src={VenueImg} alt="venue img" />
           </div>
