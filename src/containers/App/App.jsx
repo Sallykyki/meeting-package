@@ -1,17 +1,16 @@
 import React, {Component} from "react";
-import "../../components/Navbar";
-import Navbar from "../../components/Navbar";
-import Footer from "../../components/Footer";
-import Body from "../../components/Body";
-
+import {BrowserRouter, Switch, Route} from "react-router-dom";
+import LoginPage from "../LoginPage";
 class App extends Component {
   render() {
     return (
-      <div>
-        <Navbar />
-        <Body />
-        <Footer />
-      </div>
+      <BrowserRouter>
+        <Switch>
+          <Route exact path="/" component={LoginPage} />
+          {/* <Route path="/booking" component={BookingList} /> */}
+          {/* <Route path="/booking" component={Booking} /> */}
+        </Switch>
+      </BrowserRouter>
     );
   }
 }
