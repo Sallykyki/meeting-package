@@ -1,5 +1,5 @@
 import React, {Component} from "react";
-
+import {Link} from "react-router-dom";
 class LoginPage extends Component {
   render() {
     return (
@@ -32,7 +32,9 @@ class LoginPage extends Component {
                     />
                   </div>
                   <div>
-                    <p>Don't have an account? Sign up</p>
+                    <Link to="/signup">
+                      <p>Don't have an account? Sign up</p>
+                    </Link>
                   </div>
                   <button className="btn btn-lg btn-primary btn-block text-uppercase">Sign in</button>
                 </form>
