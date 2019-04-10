@@ -1,4 +1,6 @@
 import React, {Component} from "react";
+import {Link} from "react-router-dom";
+import "./SignupPage.scss";
 
 class SignupPage extends Component {
   constructor(props) {
@@ -71,6 +73,9 @@ class SignupPage extends Component {
                       required
                     />
                   </div>
+                  <Link to="/">
+                    <p>Already have an account? Login</p>
+                  </Link>
                   <button className="btn btn-lg btn-primary btn-block text-uppercase">Sign up</button>
                 </form>
               </div>
