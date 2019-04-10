@@ -1,5 +1,7 @@
 import React, {Component} from "react";
 import {Link} from "react-router-dom";
+import {connect} from "react-redux";
+import {signUpRequest} from "../../redux/auth/authActions";
 import "./SignupPage.scss";
 
 class SignupPage extends Component {
@@ -24,8 +26,8 @@ class SignupPage extends Component {
   };
 
   handleSubmit = (e) => {
-    alert("A name was submitted: " + this.state.email);
     e.preventDefault();
+    this.props.signUpRequest();
   };
 
   render() {
@@ -87,4 +89,14 @@ class SignupPage extends Component {
   }
 }
 
-export default SignupPage;
+const mapStateToProps = (state) => {
+  console.log(state);
+  return {auth: state.auth};
+};
+
+const mapActionsToProps = {signUpRequest};
+
+export default connect(
+  mapStateToProps,
+  mapActionsToProps
+)(SignupPage);
